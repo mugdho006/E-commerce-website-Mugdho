@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Works with navbar */
+nav {
+    height: 88px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+}
+nav .navbar-items {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+nav .logo {
+    font-weight: 700;
+    font-size: 18px;
+}
+nav .search-option {
+    width: 50%;
+    min-width: 200px;
+    border-radius: 20px;
+    background-color: #EDEDF0;
+    height: 48px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    box-shadow: 2px 4px 15px -1px rgba(0,0,0,0.27);
+}
+nav .search-option .search-icon {
+    width: 70px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav .search-option .search-input {
+    width: 100%;
+    padding: 10px;
+}
+nav .search-option .search-input input {
+    background-color: transparent;
+    height: 48px;
+    width: 100%;
+    border: none;
+    font-size: 14px;
+    outline: none;
+}
+nav .cart-option .cart-icon {
+    font-size: 24px;
+    cursor: pointer;
+}
+/* backrground image */
+nav::before {
+    background: url('../photos/background.jpg') no-repeat center center/cover;
+    content: "";
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    /* opacity: 0.3; */
+}
+/* Hero section */
+.hero-section {
+    width: 100%;
+    height: 100%;
+    margin-top: 80px;
+    font-family: 'Montserrat', sans-serif;
+}
+.hero-section .header {
+    height: 100%;
+    font-size: 2.5rem;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+}
+.hero-section .buy-now-button {
+    background: black;
+    width: 95px;
+    height: 45px;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    
+
+}
+.hero-section .buy-now-button a {
+    color: white;
+    text-decoration: none;
+
+}
+
+
+
+
+
+
+
+
+
+/* general classes */
+.vertical-line {
+    width: 70px;
+    height: 5px;
+    background: rgb(0, 255, 0);
+    margin: auto;
+}
+a {
+    color: black;
+    text-decoration: none;
+}
